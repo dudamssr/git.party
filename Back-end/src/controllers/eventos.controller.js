@@ -253,7 +253,7 @@ const excluir = async (req, res) => {
 
         const eventoId = Number(id);
 
-        // APAGA INSCRIÇÕES
+     
         await prisma.inscricoes.deleteMany({
 
             where: {
@@ -264,7 +264,6 @@ const excluir = async (req, res) => {
 
         });
 
-        // APAGA IMAGENS
         await prisma.imagem.deleteMany({
 
             where: {
@@ -275,7 +274,7 @@ const excluir = async (req, res) => {
 
         });
 
-        // APAGA EVENTO
+       
         const item = await prisma.eventos.delete({
 
             where: {
