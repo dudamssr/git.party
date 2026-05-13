@@ -36,7 +36,7 @@ body{
   );
 }
 
-/* ===== CORES ===== */
+
 
 .bg-background{
   background-color: #131314;
@@ -78,7 +78,7 @@ body{
   border-color: #45474b;
 }
 
-/* ===== ESPAÇAMENTOS ===== */
+
 
 .px-margin-mobile{
   padding-left: 16px;
@@ -178,7 +178,7 @@ body{
   font-weight: 600;
 }
 
-/* ===== INPUTS ===== */
+
 
 input{
   color: white;
@@ -192,7 +192,7 @@ input:focus{
   border-color: #c3c6cf;
 }
 
-/* ===== RESPONSIVO ===== */
+
 
 @media (max-width: 768px){
 
