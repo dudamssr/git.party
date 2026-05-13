@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" class="dark">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Git Party</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-[#131314] text-white antialiased">
+
+
+    <header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-16 h-16 bg-[#131314]/80 backdrop-blur-xl border-b border-[#45474b]">
+
+        <div class="flex items-center gap-6">
+
+            <span class="text-2xl font-bold text-[#c3c6cf]">
+                Git Party
+            </span>
+
+        </div>
+
+        <div>
+
+            <a href="pagina1.html" class="text-gray-300 hover:text-white transition">
+                Voltar
+            </a>
+
+        </div>
+
+    </header>
+
+ 
+
+    <main class="pt-32 px-6 md:px-16 max-w-2xl mx-auto">
+
+        <div class="bg-[#1f2020] border border-[#45474b] rounded-xl p-8">
+
+            <h1 class="text-4xl font-bold mb-8">
+                Criar Evento
+            </h1>
+
+            <form id="formEvento" class="flex flex-col gap-6">
+
+             
+
+                <div>
+
+                    <label class="block mb-2 text-gray-300">
+                        Título
+                    </label>
+
+                    <input 
+                        type="text"
+                        id="titulo"
+                        class="w-full bg-[#131314] border border-[#45474b] rounded-lg px-4 py-3 outline-none text-white"
+                        required
+                    >
+
+                </div>
+
+                <!-- DESCRIÇÃO -->
+
+                <div>
+
+                    <label class="block mb-2 text-gray-300">
+                        Descrição
+                    </label>
+
+                    <textarea
+                        id="descricao"
+                        rows="4"
+                        class="w-full bg-[#131314] border border-[#45474b] rounded-lg px-4 py-3 outline-none text-white"
+                        required
+                    ></textarea>
+
+                </div>
+
+                <!-- DATA -->
+
+                <div>
+
+                    <label class="block mb-2 text-gray-300">
+                        Data do Evento
+                    </label>
+
+                    <input 
+                        type="datetime-local"
+                        id="data_evento"
+                        class="w-full bg-[#131314] border border-[#45474b] rounded-lg px-4 py-3 outline-none text-white"
+                        required
+                    >
+
+                </div>
+
+                <!-- LOCAL -->
+
+                <div>
+
+                    <label class="block mb-2 text-gray-300">
+                        Local
+                    </label>
+
+                    <input 
+                        type="text"
+                        id="local"
+                        class="w-full bg-[#131314] border border-[#45474b] rounded-lg px-4 py-3 outline-none text-white"
+                        required
+                    >
+
+                </div>
+
+                <!-- CAPACIDADE -->
+
+                <div>
+
+                    <label class="block mb-2 text-gray-300">
+                        Capacidade Máxima
+                    </label>
+
+                    <input 
+                        type="number"
+                        id="capacidade_max"
+                        class="w-full bg-[#131314] border border-[#45474b] rounded-lg px-4 py-3 outline-none text-white"
+                        required
+                    >
+
+                </div>
+
+                <!-- BOTÃO -->
+
+                <button 
+                    type="submit"
+                    class="bg-[#cec3cd] text-black py-4 rounded-xl font-bold hover:opacity-90 transition-all"
+                >
+
+                    Cadastrar Evento
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
